@@ -1,0 +1,608 @@
+html {
+    font-size: 100%; /*Fix a IE em BUG*/
+}
+
+font, basefont {
+    font-size: 100%; /*Fix a IE em BUG*/
+}
+
+/* First, fix the fonts */
+body, caption, th, td, input, textarea, select, option, legend, fieldset  {
+    font-family: "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, #site-name {
+    font-family: Ubuntu, "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+.views-field-title a {
+    text-decoration: none;
+}
+a:hover h1 {
+    text-decoration: underline;
+}
+
+/* Default site name way too large */
+#site-name {
+    font-size: 1.5em;
+    line-height: 2em;
+    padding-left: 1%;
+    letter-spacing: 0em;
+}
+
+/* Setup colors so we get a background color */
+
+body {
+    background-color: black;
+    font-size: 1em;
+}
+
+a, a:visited {
+    color: #8E2C2C;
+}
+
+#site-header {
+    background-color: #ddd;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+#branding img {
+    float: left;
+}
+
+#site-menu {
+    background-color: #ddd;
+    text-align: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: hidden;
+}
+
+#site-menu li a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* for hover tabs */
+#site-menu li:hover {
+    background-color: #f8f8f8;
+}
+
+#site-menu li:hover a {
+    color: #953839;
+}
+
+#site-menu li.active a {
+    color: black;
+}
+
+#site-menu li {
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-left: -1px;
+    margin-right: -1px;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #eee;
+}
+
+#site-menu li.active-trail,
+#site-menu li.active {
+    background-color: white;
+}
+
+#site-header {
+    padding-bottom: 6px;
+}
+
+#branding {
+    vertical-align: center;
+}
+
+/* This ensures that either gs960 works */
+.container-12, .container-16 {
+    background-color: white;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+h2 {
+    font-size: 1.4em;
+}
+h3, h4, h5, h6 {
+    font-size: 1.2em;
+}
+
+/* Fix gapping between header and body */
+
+#main-content-container {
+    margin-top: 0;
+    padding-top: 20px;
+    -webkit-border-bottom-left-radius: 12px;
+    -moz-border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    -webkit-border-bottom-right-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#footer-wrapper {
+    padding-top: 10px;
+    background-color: black;
+}
+
+#footer-message {
+    color: #ddd;
+}
+
+#footer-message a {
+    color: #eee;
+}
+
+/*** BOX AROUND MEETING ***/
+.main-border-box,
+#front-right .view-next-meeting {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px #E38556 solid;
+    margin-bottom: 20px;
+}
+
+.main-border-box .header-fill .view-header {
+    margin: 0px -10px;
+}
+.main-border-box #page-title,
+.main-border-box .header-fill .view-header,
+#front-right .view-next-meeting h1 {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: black;
+    padding: 12px;
+    margin: -2px -2px 0px;
+    background-color: #E38556;
+}
+
+/** for views that look like pages */
+.main-border-box .view-header {
+    margin: 10px;
+    padding-bottom: 5px;
+}
+.main-border-box .view-header h1 {
+    margin-bottom: 0px;
+}
+
+.main-border-box .view-header,
+#front-right .view-next-meeting h1 {
+    margin-bottom: 15px;
+}
+
+#front-right h1 {
+    margin-bottom: 0px;
+}
+
+#front-right .item-list h3 {
+    line-height: 2em;
+    font-size: 1.4em;
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+/* #front-right .item-list h3 { */
+/*     line-height: 2em; */
+/*     margin-bottom: 2px; */
+/*     overflow: hidden; */
+/*     padding-top: 10px; */
+/*     border-bottom: 1px #E38556 solid; */
+/* } */
+
+/* #front-right .item-list h3 span { */
+/*     line-height: 1; */
+/*     padding: 8px 30px 8px 1em; */
+/*     color: black; */
+/*     background-color: #E38556; */
+/*     line-height: 2em; */
+/*     -webkit-border-top-right-radius: 10px; */
+/*     -moz-border-top-right-radius: 10px; */
+/*     border-top-right-radius: 10px; */
+/* } */
+
+#front-right h1,
+#front-right .views-field-field-meeting-presenter-value,
+#front-right .views-field-body {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#front-right .view-next-meeting .views-field-view-node {
+    text-align: right;
+    line-height: 1;
+    padding: 10px 0px 5px;
+    overflow: hidden;
+}
+
+#front-right .view-next-meeting .views-field-view-node a {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:  #E38556;
+    color: black;
+    text-decoration: none;
+   padding: 5px 10px;
+}
+#front-right .view-next-meeting .views-field-view-node a:hover {
+    background-color: #E3AD91;
+}
+
+.block p {
+    margin-bottom: 1em;
+}
+
+
+/*** Menu Block ***/
+#sidebar-first .block-menu_block {
+    border: 2px #E38556 solid;
+    border-right: none;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+/* meeting list */
+
+.view-past-meetings h3 {
+    margin: 0px -12px;
+    padding: 0px 12px;
+    background-color: black;
+    color: white;
+}
+.view-past-meetings ul {
+    margin-bottom: 20px;
+}
+
+
+/* sidebar trickery */
+
+#sidebar-first .block-menu_block .content {
+    padding: 0;
+}
+#sidebar-first .block-menu_block h2 {
+    margin-left: 14px;
+}
+
+#sidebar-first .block-menu_block h2 a.active,
+#sidebar-first .block-menu_block li a.active {
+    background-color: white;
+}
+
+
+#sidebar-first .block-menu_block h2 a:hover,
+#sidebar-first .block-menu_block li a:hover {
+    border: 2px black solid;
+    padding: 9px;
+}
+
+#sidebar-first .block-menu_block h2 a,
+#sidebar-first .block-menu_block li a {
+    padding: 10px;
+    display: block;
+    color: black;
+    background-color: #E3AD91;
+    text-decoration: none;
+    text-align: right;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px #999 solid;
+}
+
+#sidebar-first .block-menu_block h2,
+#sidebar-first .block-menu_block li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "DejaVu Sans", Helvetica, Arial, sans-serif;
+    padding: 0px;
+}
+
+#sidebar-first .block-menu_block h2,
+#sidebar-first .block-menu_block li,
+#sidebar-first .block-menu_block {
+    background-color: #E38556;
+}
+
+#sidebar-first .block-menu_block ul li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/*** Pager ***/
+
+
+/*** Page tabs ***/
+#page-title {
+    margin-bottom: 0px;
+}
+
+.main-border-box #content-tabs {
+    border: none;
+    padding: 3px 10px 0px;
+    background-color: #E38556;
+    overflow: hidden;
+}
+
+ul.primary {
+    white-space: normal;
+    line-height: 1.5;
+}
+
+ul.main-menu li,
+ul.primary a {
+    white-space: nowrap;
+}
+
+.main-border-box #content-tabs ul.secondary li,
+.main-border-box #content-tabs ul.primary li {
+    margin: 0px;
+}
+
+.main-border-box #content-tabs ul.secondary li,
+.main-border-box #content-tabs ul.primary li {
+    padding: 3px 6px;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #E3AD91;
+    border: 1px #999 solid;
+    border-bottom: none;
+}
+
+.main-border-box #content-tabs ul.secondary li a.active,
+.main-border-box #content-tabs ul.primary li a.active {
+    border-bottom: none;
+}
+
+.main-border-box #content-tabs ul.secondary li.active,
+.main-border-box #content-tabs ul.primary li.active {
+    background-color: white;
+}
+
+/*** BOX AROUND MEETING ***/
+.sidebar .block,
+#front-right .content .view-upcoming-events,
+#front-left .content {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px #953839 solid;
+    margin-bottom: 20px;
+
+    /* border: 2px #953839 solid; */
+    /* padding: 5px 10px 0px; */
+    /* margin-right: 10px; */
+    /* margin-bottom: 10px; */
+    /* background-color: #EDEDED; */
+}
+
+.sidebar .block h2,
+#front-right h1,
+#front-left h1 {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    padding: 12px;
+    margin-top: -2px;
+    margin-right: -2px;
+    margin-left: -2px;
+    background-color: #953839;
+}
+
+#front-left .view-news .views-row {
+    padding-bottom: 25px;
+}
+
+.sidebar .block .content,
+.main-border-box #main-content,
+#front-left .content .view-content {
+    padding: 0px 10px;
+}
+
+#front-left .content .more-link {
+    line-height: 1;
+    padding: 10px 0px 5px;
+    overflow: hidden;
+}
+
+#front-left .content .more-link a {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #953839;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#front-left .content .more-link a:hover {
+    background-color: #956767;
+}
+
+/** fix for the hvstem calendar, otherwise images fly away */
+
+.view-id-hvstem .views-row
+{ padding: 5px; }
+
+.view-id-calendar_hvstem .views-row-even,
+.view-id-hvstem .views-row-even
+{
+    padding: 5px;
+    background-color: #ededed;
+}
+
+.view-id-calendar_hvstem .views-row-odd
+{
+    padding: 5px;
+}
+
+.view-calendar-hvstem .imagecache {
+    vertical-align: top;
+}
+
+/* make sure that images don't grow bigger than columns */
+.container-12 .grid-6 img,
+.container-12 .grid-9 img {
+    width: auto;
+    height: auto;
+    max-width: 98%;
+}
+
+/* Remove the border at the bottom of .node */
+
+.node {
+    border: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+/* Do the upcoming events thing with numbers */
+
+.view-upcoming-events a {
+    text-decoration: none;
+}
+.view-upcoming-events a:hover {
+    text-decoration: underline;
+}
+
+.view-upcoming-events .views-field-title {
+    font-weight: bold;
+}
+
+.view-upcoming-events .item-list ul li {
+    list-style-type: none;
+    margin-left: 4em;
+    margin-bottom: 1em;
+}
+
+.view-upcoming-events .views-field-field-meeting-date-value-3 {
+    font-family: Modern Antiqua, Georgia, sans-serif;
+    width: 1.5em;
+    float: left;
+    margin-left: -2em;
+    font-size: 2em;
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+/* Fix for views */
+#main-content .views-tabset .views-tabs ul {
+    margin-left: 0px;
+}
+
+/* This make the responsive stuff work. We drop below 767 and
+   all the columns reflow into a single column */
+
+/* @media screen and (max-device-width: 810px) {
+	* { -webkit-text-size-adjust: 100%; }
+} */
+
+/** @media handheld, only screen and (max-width: 767px) { */
+@media (max-width: 1024px) {
+    .container-12 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+}
+
+@media handheld, only screen and (max-width: 767px) {
+     * { -webkit-text-size-adjust: 100%; }
+
+    .container-12 .push-1,
+    .container-12 .pull-1,
+    .container-12 .push-2,
+    .container-12 .pull-2,
+    .container-12 .push-3,
+    .container-12 .pull-3,
+    .container-12 .push-4,
+    .container-12 .pull-4,
+    .container-12 .push-5,
+    .container-12 .pull-5,
+    .container-12 .push-6,
+    .container-12 .pull-6,
+    .container-12 .push-7,
+    .container-12 .pull-7,
+    .container-12 .push-8,
+    .container-12 .pull-8,
+    .container-12 .push-9,
+    .container-12 .pull-9,
+    .container-12 .push-10,
+    .container-12 .pull-10,
+    .container-12 .push-11,
+    .container-12 .pull-11
+    {
+        left: 0;
+    }
+
+    .container-12 .grid-1,
+    .container-12 .grid-2,
+    .container-12 .grid-3,
+    .container-12 .grid-4,
+    .container-12 .grid-5,
+    .container-12 .grid-6,
+    .container-12 .grid-7,
+    .container-12 .grid-8,
+    .container-12 .grid-9,
+    .container-12 .grid-10,
+    .container-12 .grid-11,
+    .container-12 .grid-12
+    {
+        width: 98%;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+}
+
+
+@media (max-width: 650px) {
+    /* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
+    body, input, textarea {
+    font-size: 0.8em;
+}
+}
