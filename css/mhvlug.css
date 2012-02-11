@@ -253,6 +253,7 @@ h3, h4, h5, h6 {
 }
 
 
+
 /*** Menu Block ***/
 #sidebar-first .block-menu_block {
     border: 2px #E38556 solid;
@@ -461,6 +462,27 @@ ul.primary a {
 
 /** fix for the hvstem calendar, otherwise images fly away */
 
+.upcoming-past {
+    opacity: 0.4;
+}
+
+.past .view-item {
+    opacity: 0.4;
+}
+
+/* get rid of background coloring */
+.calendar-calendar td.today .inner div.day a,
+.today .month.day a,
+.today .month.day {
+    background-color: #953839;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar-calendar tr td.today {
+    background-color: transparent;
+}
+
 .view-id-hvstem .views-row
 { padding: 5px; }
 
@@ -525,6 +547,7 @@ ul {
     font-size: 2em;
     text-align: right;
     padding-right: 0.5em;
+    margin-top: -0.15em;
 }
 
 /* Fix for views */
@@ -549,7 +572,7 @@ ul {
 
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media (max-width: 767px) {
      * { -webkit-text-size-adjust: 100%; }
 
     .container-12 .push-1,
@@ -600,9 +623,16 @@ ul {
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
     /* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
     body, input, textarea {
     font-size: 0.8em;
 }
+}
+
+@media (max-width: 480px) {
+    /* Default site name way too large */
+    #site-name {
+        line-height: 1em;
+    }
 }
