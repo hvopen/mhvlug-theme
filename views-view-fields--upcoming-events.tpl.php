@@ -33,16 +33,18 @@ $upcoming_date = strtotime($fields[field_meeting_date_value_1]->raw);
 if ($upcoming_date == $last_date) {
     $fields[field_meeting_date_value_3]->content = "";
 }
+
+$timeclass = "upcoming-future";
+if ($upcoming_date < time()) {
+    $timeclass = "upcoming-past";
+}
+
+$classes = implode(" ", array($timeclass, $fields[type]->content, $fields[tid]->content));
 ?>
 
-<?php if ($upcoming_date < time()): ?>
-<div class="upcoming-past">
-  <?php else: ?>
-  <div class="upcoming-future">
-<?php endif; ?>
-
-
+<div class="<?php print $classes; ?>">
 <?php foreach ($fields as $id => $field): ?>
+
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>

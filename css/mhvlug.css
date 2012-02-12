@@ -550,6 +550,12 @@ ul {
     margin-top: -0.15em;
 }
 
+/** hide these two fields */
+.view-upcoming-events .views-field-type,
+.view-upcoming-events .views-field-tid {
+    display: none;
+}
+
 /* Fix for views */
 #main-content .views-tabset .views-tabs ul {
     margin-left: 0px;
