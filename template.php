@@ -102,12 +102,12 @@ function omega_starterkit_preprocess_block(&$vars, $hook) {
 
 /**
  * Create a string of attributes form a provided array.
- * 
+ *
  * @param $attributes
  * @return string
  */
 function mhvlug2_render_attributes($attributes) {
-	return omega_render_attributes($attributes);  
+	return omega_render_attributes($attributes);
 }
 
 
@@ -133,5 +133,19 @@ function mhvlug2_follow_us() {
   $string .= '<a href="http://www.google.com/calendar/render?cid=' . urlencode("http://" . $_SERVER['HTTP_HOST'] . "/calendar/ical?" . time()) . '"><img alt="Add us to Google Calendar" src="/sites/all/themes/mhvlug2/images/Google-Calendar-32.png" style="height: 24px;" /></a>&nbsp;';
   $string .= '</div>';
   return $string;
-  
+
+}
+
+/***
+ * Optimize Javascript
+ */
+
+function _phptemplate_variables($hook, $vars) {
+  if ($hook == 'page') {
+    if(module_exists('javascript_aggregator') && $vars['scripts']) {
+      $vars['scripts'] = javascript_aggregator_cache($vars['scripts']);
+    }
+    return $vars;
+  }
+  return array();
 }

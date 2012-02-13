@@ -8,7 +8,7 @@
 <head>
   <title><?php print $head_title; ?></title>
   <meta name="viewport" content="width=device-width" />
-  <link href='http://fonts.googleapis.com/css?family=Modern+Antiqua' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700|Modern+Antiqua' rel='stylesheet' type='text/css'>
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>

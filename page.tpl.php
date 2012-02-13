@@ -8,6 +8,7 @@
 <head>
   <title><?php print $head_title; ?></title>
   <meta name="viewport" content="width=device-width" />
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
