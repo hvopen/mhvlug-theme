@@ -222,7 +222,7 @@ h3, h4, h5, h6 {
 #front-right .views-field-body {
     padding-left: 10px;
     padding-right: 10px;
-
+    overflow: auto;
 }
 
 #front-right .view-next-meeting .views-field-view-node {
