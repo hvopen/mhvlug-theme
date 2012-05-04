@@ -25,10 +25,6 @@
     <style type="text/css">
       <!--
       <?php print $css ?>
-      .container-12 {
-        width: 92%;
-        margin: 20px 10px;
-      }
       -->
 
     </style>
@@ -36,15 +32,19 @@
 
     <style type="text/css">
       .container-12 {
-    width: 92%;
+    width: 800px;
     margin: 20px 10px;
       }
       </style>
   </head>
   <body id="mimemail-body" <?php if ($mailkey): print 'class="'. $mailkey .'"'; endif; ?>>
     <div id="page" class="clearfix">
-      <div id="site-header" class="container-12 clearfix" style="padding: 20px">
+      <div id="site-header" class="container-12 clearfix" style="width: 800px; padding: 20px">
         <table width="100%">
+          <tr>
+            <td><img src="http://mhvlug.org/sites/all/themes/mhvlug2/images/hvstem.png">
+            </td>
+          </td>
           <tr>
             <td id="branding" width="80%">
               <h2 id="site-name" class=""><a href="http://hvstem.org">Hudson Valley STEM Calendar</a></h2>
@@ -53,7 +53,7 @@
         </div>
 
 
-    <div id="main-content-container" class="container-12 clearfix" style="padding: 20px">
+    <div id="main-content-container" class="container-12 clearfix" style="width: 800px; padding: 20px">
       <div id="main-wrapper" class="column">
         <div id="main-content" class="region clearfix">
           <?php print $body ?>

@@ -147,5 +147,5 @@ function _phptemplate_variables($hook, $vars) {
     }
     return $vars;
   }
-  return array();
+  return $vars;
 }
