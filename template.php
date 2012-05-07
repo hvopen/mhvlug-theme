@@ -128,9 +128,10 @@ function mhvlug2_calendar_ical_icon($url) {
 
 function mhvlug2_follow_us() {
   $string = "<div>";
-  $string .= '<a href="http://www.facebook.com/mhvlug"><img alt="Like us on Facebook" src="/sites/all/themes/mhvlug/images/facebook_button.png" style="width: 24px; height: 24px; " /></a>&nbsp;';
-  $string .= '<a href="https://twitter.com/#!/mhvlug"><img alt="Follow us on Twitter" src="/sites/all/themes/mhvlug/images/Twitter_256x256.png" style="width: 24px; height: 24px; " /></a>&nbsp;';
-  $string .= '<a href="http://www.google.com/calendar/render?cid=' . urlencode("http://" . $_SERVER['HTTP_HOST'] . "/calendar/ical?" . time()) . '"><img alt="Add us to Google Calendar" src="/sites/all/themes/mhvlug2/images/Google-Calendar-32.png" style="height: 24px;" /></a>&nbsp;';
+  $string .= '<a href="http://www.facebook.com/mhvlug"><img alt="Like us on Facebook" src="/sites/all/themes/mhvlug2/images/facebook_24x24.png" /></a>&nbsp;';
+  $string .= '<a href="https://twitter.com/#!/mhvlug"><img alt="Follow us on Twitter" src="/sites/all/themes/mhvlug2/images/twitter_24x24.png" /></a>&nbsp;';
+  $string .= '<a href="http://www.linkedin.com/groups/MHVLUG-1163697"><img alt="Join us on Linked In" src="/sites/all/themes/mhvlug2/images/linkedin_24x24.png" /></a>&nbsp;';
+  $string .= '<a href="http://www.google.com/calendar/render?cid=' . urlencode("http://" . $_SERVER['HTTP_HOST'] . "/calendar/ical?" . time()) . '"><img alt="Add us to Google Calendar" src="/sites/all/themes/mhvlug2/images/google_calendar_24x24.png" /></a>&nbsp;';
   $string .= '</div>';
   return $string;
 
