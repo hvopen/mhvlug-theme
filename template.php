@@ -110,6 +110,35 @@ function mhvlug2_render_attributes($attributes) {
 	return omega_render_attributes($attributes);
 }
 
+function mhvlug2_meetup_events_venueid($node) {
+  if (! $node->field_location) {
+    return;
+  }
+
+  $loc = node_load($node->field_location[0]["nid"]);
+
+  if (! $loc->field_meetupvenue) {
+    return;
+  }
+
+  $venue = $loc->field_meetupvenue[0]["value"];
+
+  if ($loc->field_meetuplat && $loc->field_meetuplon) {
+    $venue .= "," . $loc->field_meetuplat[0]["value"] . "," . $loc->field_meetuplon[0]["value"];
+  }
+
+  return $venue;
+}
+
+function mhvlug2_meetup_events_body($node) {
+  $location = node_load($node->field_location[0]["nid"]);
+  $result = $node->body . $location->body;
+  return $result;
+}
+
+function mhvlug2_meetup_events_date($node) {
+  return $node->field_meeting_date[0]["value"];
+}
 
 /***
  * Fix the calendar templates
