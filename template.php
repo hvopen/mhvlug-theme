@@ -160,6 +160,7 @@ function mhvlug2_follow_us() {
   $string .= '<a href="http://www.facebook.com/mhvlug"><img alt="Like us on Facebook" src="/sites/all/themes/mhvlug2/images/facebook_24x24.png" /></a>&nbsp;';
   $string .= '<a href="https://twitter.com/#!/mhvlug"><img alt="Follow us on Twitter" src="/sites/all/themes/mhvlug2/images/twitter_24x24.png" /></a>&nbsp;';
   $string .= '<a href="http://www.linkedin.com/groups/MHVLUG-1163697"><img alt="Join us on Linked In" src="/sites/all/themes/mhvlug2/images/linkedin_24x24.png" /></a>&nbsp;';
+  $string .= '<a href="http://www.meetup.com/mhvlug/"><img alt="Join us on Meetup" src="/sites/all/themes/mhvlug2/images/meetup_35x24.png" /></a>&nbsp;';
   $string .= '<a href="http://www.google.com/calendar/render?cid=' . urlencode("http://" . $_SERVER['HTTP_HOST'] . "/calendar/ical?" . time()) . '"><img alt="Add us to Google Calendar" src="/sites/all/themes/mhvlug2/images/google_calendar_24x24.png" /></a>&nbsp;';
   $string .= '</div>';
   return $string;
