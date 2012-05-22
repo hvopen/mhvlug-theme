@@ -121,6 +121,10 @@ function mhvlug2_meetup_events_venueid($node) {
     return;
   }
 
+  if (! $loc->field_meetupvenue[0]["value"]) {
+    return;
+  }
+
   $venue = $loc->field_meetupvenue[0]["value"];
 
   if ($loc->field_meetuplat && $loc->field_meetuplon) {
