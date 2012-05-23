@@ -225,6 +225,14 @@ h3, h4, h5, h6 {
     overflow: auto;
 }
 
+/**
+   * Extra goofiness for the RSVP button
+   */
+#front-right .views-field-field-meeting-presenter-value {
+    line-height: 30px;
+    vertical-align: text-bottom;
+}
+
 #front-right .views-field-meetup-link {
     padding-left: 10px;
     padding-right: 10px;
