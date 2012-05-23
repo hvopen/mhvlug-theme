@@ -218,6 +218,7 @@ h3, h4, h5, h6 {
 /* } */
 
 #front-right h1,
+#front-right .views-field-meetup-link,
 #front-right .views-field-field-meeting-presenter-value,
 #front-right .views-field-body {
     padding-left: 10px;
