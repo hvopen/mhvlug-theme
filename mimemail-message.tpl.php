@@ -54,18 +54,6 @@
 
             <div class="content">
 
-              <a href="http://www.facebook.com/mhvlug"><img
-              alt="Like us on Facebook"
-              src="/sites/all/themes/mhvlug/images/facebook_button.png" /></a>
-
-              <a href="https://twitter.com/#!/mhvlug"><img
-              alt="Follow us on Twitter"
-              src="/sites/all/themes/mhvlug/images/Twitter_256x256.png"/></a>
-
-              <a href="http://www.linkedin.com/groups/MHVLUG-1163697"><img
-              alt="Join us on Linked In"
-              src="/sites/all/themes/mhvlug2/images/linkedin_24x24.png"/></a>
-
               <a href="http://www.meetup.com/mhvlug/"><img
               alt="Join us on Meetup"
               src="/sites/all/themes/mhvlug2/images/meetup_35x24.png"/></a>
