@@ -1,0 +1,259 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* font styles */
+/* First, fix the fonts */
+body, caption, th, td, input, textarea, select, option, legend, fieldset  {
+    font-family: "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Ubuntu, "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+h2 {
+    font-size: 1.4em;
+}
+h3, h4, h5, h6 {
+    font-size: 1.2em;
+}
+
+a, a:visited {
+    color: #8E2C2C;
+}
+
+.container-12 {
+    background-color: white;
+}
+
+/*** header */
+h1.site-name,
+h2.site-name {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.zone-menu,
+.zone-branding {
+    background-color: #ddd;
+}
+
+/*** main navigation */
+
+.navigation {
+    background-color: #ddd;
+    overflow: hidden;
+    margin-top: 0.25em;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* for hover tabs */
+.navigation li:hover {
+    background-color: #f8f8f8;
+}
+
+.navigation li:hover a {
+    color: #953839;
+}
+
+.navigation li.active a {
+    color: black;
+}
+
+.navigation .inline li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.navigation li {
+    margin-left: 1px;
+    margin-right: 1px;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #eee;
+}
+
+.navigation li.active-trail,
+.navigation li.active {
+    background-color: white;
+}
+
+.zone-content {
+    padding-top: 0.75em;
+}
+.zone-content .block {
+    padding-bottom: 2em;
+}
+
+
+
+h2.block-title,
+h1.title,
+.front .zone-content .view-header,
+.front .zone-content .view-next-meeting h1 {
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0.33em 0.5em;
+    margin: 0;
+    color: white;
+    background-color: #953839;
+
+}
+
+.view-past-meetings h3 {
+    padding: 0 0.5em;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+.view-past-meetings .item-list ul li {
+    margin-left: 0.5em;
+}
+
+.view-next-meeting .views-field-title a {
+    color: black
+}
+
+.views-field-title a {
+    text-decoration: none;
+}
+
+.views-field-title a:hover {
+    text-decoration: underline;
+}
+
+h1.title,
+.front .zone-content .view-next-meeting h1 {
+    color: black;
+    background-color: #E38556;
+}
+
+.front .zone-content .view-header h1 {
+    margin-bottom: 0;
+}
+
+.content h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.view-upcoming-events li {
+    display: block;
+}
+
+/** Edit tabs */
+.tabs {
+    font-size: 0.8em;
+    border: none;
+    padding: 3px 10px 0px;
+    background-color: #E38556;
+    overflow: hidden;
+}
+
+ul.primary li.active a:hover,
+ul.primary li.active a,
+ul.primary li a:hover,
+ul.primary li a {
+    background-color: inherit;
+    border: none;
+}
+
+ul.primary {
+    border: none;
+    margin: 0;
+    white-space: normal;
+    line-height: 1.5;
+}
+
+ul.main-menu li,
+ul.primary a {
+    white-space: nowrap;
+}
+
+.tabs ul.secondary li,
+.tabs ul.primary li {
+    margin: 0px;
+}
+
+.tabs ul.primary li a {
+    margin: 0 0.2em;
+}
+
+.tabs ul.secondary li,
+.tabs ul.primary li {
+    padding: 3px 6px 3px;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #E3AD91;
+    border: 1px #999 solid;
+    border-bottom: none;
+    margin: 0 0.1em;
+}
+
+.tabs ul.secondary li a.active,
+.tabs ul.primary li a.active {
+    border-bottom: none;
+}
+
+.tabs ul.secondary li.active,
+.tabs ul.primary li.active {
+    background-color: white;
+}
+
+/** fade past items */
+.upcoming-past {
+    opacity: 0.4;
+}
+
+.view-upcoming-events .views-field {
+    margin-left: 2em;
+}
+.view-upcoming-events .views-row {
+    margin-bottom: 0.75em;
+}
+
+.day-of-month {
+    font-family: Modern Antiqua, Georgia, sans-serif;
+    width: 1.5em;
+    float: left;
+    margin-left: -2em;
+    font-size: 2em;
+    text-align: right;
+    padding-right: 0.5em;
+    margin-top: -0.3em;
+}
+
+/* .front .zone-content .view-next-meeting h1 */
+
+/* .front .zone-content .view {
+    webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px #E38556 solid;
+    margin-bottom: 20px;
+}*/
