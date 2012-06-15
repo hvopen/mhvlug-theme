@@ -101,6 +101,14 @@ h2.site-name {
     padding-bottom: 2em;
 }
 
+.zone-content .item-list h3,
+.zone-content .field-content h2,
+.zone-content .views-field-body,
+.zone-content .views-field-created,
+.zone-content .views-field-view-node,
+.zone-content .field {
+    padding: 0 10px;
+}
 
 
 h2.block-title,
@@ -113,7 +121,7 @@ h1.title,
     -webkit-border-top-right-radius: 8px;
     -moz-border-top-right-radius: 8px;
     border-top-right-radius: 8px;
-    padding: 0.33em 0.5em;
+    padding: 0.33em 10px;
     margin: 0;
     color: white;
     background-color: #953839;
