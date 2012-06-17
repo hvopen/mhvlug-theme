@@ -12,8 +12,8 @@ h1, h2, h3 {
 }
 
 body {
+    font: 1em/1.5 "DejaVu Sans", Helvetica, Arial, sans-serif;
     background-color: black;
-    font-size: 1em;
 }
 
 h1 {
@@ -26,8 +26,14 @@ h3, h4, h5, h6 {
     font-size: 1.2em;
 }
 
+/** this is a hack because the way defaults work */
+.content a,
 a, a:visited {
     color: #8E2C2C;
+}
+
+a:hover {
+    color: #cc3839;
 }
 
 .container-12 {
@@ -254,6 +260,75 @@ ul.primary a {
     text-align: right;
     padding-right: 0.5em;
     margin-top: -0.3em;
+}
+
+/** Calendar Fixes */
+.calendar a,
+.calendar a:visited {
+    color: black;
+}
+.calendar-calendar .day-view td .stripe,
+.calendar-calendar .month-view .full td .stripe,
+.calendar-calendar .week-view .full td .stripe {
+    height: 6px;
+    width: inherit;
+    margin: 0 -3px;
+}
+
+/** Menu Block */
+.block-menu-block .block-inner {
+    padding: 0.5em 0;
+}
+
+.block-menu-block h2,
+.block-menu-block li,
+.block-menu-block .block-inner {
+    webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #E38556;
+}
+
+.block-menu-block ul li.leaf {
+    padding-right: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.block-menu-block h2.block-title {
+    font-size: 1em;
+    padding: 0 0 0 0.5em;
+}
+
+.block-menu-block h2 a:hover,
+.block-menu-block li a:hover {
+    border: 2px black solid;
+    padding: 9px;
+}
+
+.block-menu-block h2 a,
+.block-menu-block li a {
+    padding: 10px;
+    display: block;
+    color: black;
+    background-color: #E3AD91;
+    text-decoration: none;
+    text-align: right;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px #999 solid;
+}
+
+.block-menu-block h2 a.active,
+.block-menu-block li a.active {
+    background: white;
 }
 
 /* .front .zone-content .view-next-meeting h1 */
