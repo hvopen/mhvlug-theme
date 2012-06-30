@@ -94,11 +94,7 @@ h2.site-name {
 .region-menu li {
     margin-left: 1px;
     margin-right: 1px;
-    -webkit-border-top-left-radius: 6px;
-    -moz-border-top-left-radius: 6px;
     border-top-left-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -moz-border-top-right-radius: 6px;
     border-top-right-radius: 6px;
     background-color: #eee;
 }
@@ -108,8 +104,18 @@ h2.site-name {
     background-color: white;
 }
 
+.zone-footer {
+    padding: 1em;
+    padding-bottom: 3em;
+    background-color: black;
+    color: #ccc;
+    font-size: 0.8em;
+}
+
 .zone-content {
     padding-top: 0.75em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .zone-content .block {
     padding-bottom: 2em;
@@ -120,20 +126,21 @@ h2.site-name {
 .zone-content .views-field-body,
 .zone-content .views-field-created,
 .zone-content .views-field-view-node,
+.zone-content .views-field-field-photo,
 .zone-content .field {
     padding: 0 10px;
 }
+.zone-content .views-field-field-photo img {
+    padding-bottom: 3px;
+}
+
 
 
 h2.block-title,
 h1.title,
 .front .zone-content .view-header,
 .front .zone-content .view-next-meeting h1 {
-    -webkit-border-top-left-radius: 8px;
-    -moz-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-top-right-radius: 8px;
     border-top-right-radius: 8px;
     padding: 0.33em 10px;
     margin: 0;
@@ -225,11 +232,7 @@ ul.primary a {
 .tabs ul.secondary li,
 .tabs ul.primary li {
     padding: 3px 6px 3px;
-    -webkit-border-top-left-radius: 6px;
-    -moz-border-top-left-radius: 6px;
     border-top-left-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -moz-border-top-right-radius: 6px;
     border-top-right-radius: 6px;
     background-color: #E3AD91;
     border: 1px #999 solid;
@@ -291,23 +294,24 @@ ul.primary a {
 .block-menu-block h2,
 .block-menu-block li,
 .block-menu-block .block-inner {
-    webkit-border-top-left-radius: 8px;
-    -moz-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
-    -webkit-border-bottom-left-radius: 8px;
-    -moz-border-bottom-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: #E38556;
 }
 
+.block-menu-block ul li.leaf,
+.block-menu-block h2.block-title {
+    font-size: 1.2em;
+
+}
 .block-menu-block ul li.leaf {
+    margin-left: 9px;
     padding-right: 0;
     list-style-type: none;
     list-style-image: none;
 }
 
 .block-menu-block h2.block-title {
-    font-size: 1em;
     padding: 0 0 0 0.5em;
 }
 
@@ -325,11 +329,7 @@ ul.primary a {
     background-color: #E3AD91;
     text-decoration: none;
     text-align: right;
-    -webkit-border-top-left-radius: 8px;
-    -moz-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
-    -webkit-border-bottom-left-radius: 8px;
-    -moz-border-bottom-left-radius: 8px;
     border-bottom-left-radius: 8px;
     border: 1px #999 solid;
 }
@@ -337,6 +337,12 @@ ul.primary a {
 .block-menu-block h2 a.active,
 .block-menu-block li a.active {
     background: white;
+}
+
+/** get rid of this menu on mobile */
+.node-type-meeting .region-sidebar-first-inner {
+    visibility: hidden;
+    display: none;
 }
 
 /* .front .zone-content .view-next-meeting h1 */

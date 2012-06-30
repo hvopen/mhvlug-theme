@@ -1,1 +1,8 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+/* restore this menu on non mobile */
+.node-type-meeting .region-sidebar-first-inner {
+    visibility: visible;
+    display: inherit;
+}
+
