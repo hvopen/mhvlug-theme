@@ -1,4 +1,14 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal
  *  and widescreen CSS files as appropriate. */
+
+body {
+    font: 0.8em/1.5 "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+/*** header */
+h1.site-name,
+h2.site-name {
+    line-height: 2em;
+}
