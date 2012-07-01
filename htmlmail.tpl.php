@@ -23,11 +23,11 @@
             <div class="content">
               <a href="http://www.meetup.com/mhvlug/"><img
               alt="Join us on Meetup"
-              src="sites/all/themes/mhvlug2/images/meetup_35x24.png"/></a>
+              src="sites/all/themes/mhvlug3/images/meetup_35x24.png"/></a>
 
               <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fmhvlug.org%2Fcalendar%2Fical%3F1322604582"><img
               alt="Add us to Google Calendar"
-              src="sites/all/themes/mhvlug2/images/Google-Calendar-32.png"/></a>
+              src="sites/all/themes/mhvlug3/images/Google-Calendar-32.png"/></a>
             </div>
           </td>
         </tr>

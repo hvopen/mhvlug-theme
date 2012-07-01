@@ -12,7 +12,7 @@
   <div class="header" style="background-color: #ddd; padding: 10px 20px">
     <table width="100%">
       <tr>
-        <td><img style="max-width: 750px" src="http://mhvlug.org/sites/all/themes/mhvlug2/images/hvstem.png">
+        <td><img style="max-width: 750px" src="sites/all/themes/mhvlug3/images/hvstem.png">
         </td>
       </td>
       <tr>
