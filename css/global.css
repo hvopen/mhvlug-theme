@@ -121,6 +121,23 @@ h2.site-name {
     padding-bottom: 2em;
 }
 
+.zone-content .views-row {
+    padding: 0 10px;
+}
+
+.zone-content .views-field-title {
+    margin: 0 -10px;
+}
+
+.zone-content .views-field-title h2 {
+    margin: 0 10px;
+}
+
+.zone-content .region-content .block-inner {
+    margin: 0 10px;
+}
+
+/**
 .zone-content .item-list h3,
 .zone-content .field-content h2,
 .zone-content .views-field-body,
@@ -130,6 +147,8 @@ h2.site-name {
 .zone-content .field {
     padding: 0 10px;
 }
+*/
+
 .zone-content .views-field-field-photo img {
     padding-bottom: 3px;
 }
@@ -189,6 +208,10 @@ h1.title,
 
 .view-upcoming-events li {
     display: block;
+}
+
+.view-upcoming-events h3 {
+    padding-left: 10px;
 }
 
 /** Edit tabs */
