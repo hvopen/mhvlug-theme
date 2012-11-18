@@ -69,10 +69,10 @@ h2.site-name {
     padding-top: 0.33em;
 }
 
-.zone-branding h2.block-title {
+.zone-branding .region-header-second h2.block-title {
     color: black;
     background-color: clear;
-]
+}
 
 .region-menu li a {
     text-decoration: none;
