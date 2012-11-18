@@ -168,6 +168,12 @@ h1.title,
 
 }
 
+.view-next-meeting img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 .view-past-meetings h3 {
     padding: 0 0.5em;
     margin-bottom: 0;
