@@ -60,6 +60,7 @@ h2.site-name {
     background-color: #ddd;
 }
 
+
 /*** main navigation */
 .zone-branding {
     padding-top: 0.5em;
@@ -67,6 +68,11 @@ h2.site-name {
 .region-menu {
     padding-top: 0.33em;
 }
+
+.zone-branding h2.block-title {
+    color: black;
+    background-color: clear;
+]
 
 .region-menu li a {
     text-decoration: none;
