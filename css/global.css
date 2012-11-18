@@ -71,7 +71,8 @@ h2.site-name {
 
 .zone-branding .region-header-second h2.block-title {
     color: black;
-    background-color: clear;
+    background-color: transparent;
+    padding: 0;
 }
 
 .region-menu li a {
