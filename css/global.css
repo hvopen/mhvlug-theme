@@ -235,7 +235,7 @@ h1.title,
 .tabs {
     font-size: 0.8em;
     border: none;
-    padding: 0.2em 0.6em 0;
+    padding: 3px 10px 0;
     background-color: #E38556;
     overflow: hidden;
 }
@@ -246,6 +246,10 @@ ul.primary li a:hover,
 ul.primary li a {
     background-color: inherit;
     border: none;
+}
+
+ul.tabs {
+    padding-top: 0.2em;
 }
 
 ul.primary {
