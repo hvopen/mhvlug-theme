@@ -184,7 +184,8 @@ h2.site-name {
 h1 .date-display-single {
     font-weight: normal;
     font-style: italic;
-    font-size: 0.8em
+    font-size: 0.8em;
+    letter-spacing: 0em;
 }
 
 h2.block-title,
