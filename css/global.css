@@ -232,12 +232,13 @@ h1.title,
 }
 
 /** Edit tabs */
-.tabs {
+div.tabs {
     font-size: 0.8em;
     border: none;
     padding: 3px 10px 0;
     background-color: #E38556;
     overflow: hidden;
+    margin-bottom: 0.6em;
 }
 
 ul.primary li.active a:hover,
