@@ -235,7 +235,7 @@ h1.title,
 .tabs {
     font-size: 0.8em;
     border: none;
-    padding: 3px 10px 0px;
+    padding: 0.2em 0.6em 0;
     background-color: #E38556;
     overflow: hidden;
 }
