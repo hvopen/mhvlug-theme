@@ -177,6 +177,9 @@ h2.site-name {
 .view-next-meeting h1 {
     line-height: 1.3em;
 }
+.view-next-meeting .views-field-body {
+    padding-top: 1em;
+}
 
 h1 .date-display-single {
     font-weight: normal;
