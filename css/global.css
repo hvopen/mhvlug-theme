@@ -169,6 +169,20 @@ h2.site-name {
 }
 
 
+.view-news .views-row {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.view-next-meeting h1 {
+    line-height: 1.3em;
+}
+
+h1 .date-display-single {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.8em
+}
 
 h2.block-title,
 h1.title,
