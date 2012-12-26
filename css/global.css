@@ -36,6 +36,10 @@ a, a:visited {
     color: #8E2C2C;
 }
 
+.node .content {
+    padding-top: 1em;
+}
+
 a:hover {
     color: #cc3839;
 }
@@ -238,7 +242,6 @@ div.tabs {
     padding: 3px 10px 0;
     background-color: #E38556;
     overflow: hidden;
-    margin-bottom: 0.6em;
 }
 
 ul.primary li.active a:hover,
