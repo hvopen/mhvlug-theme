@@ -88,6 +88,29 @@ h2.site-name {
     color: #666;
 }
 
+.block-user-menu h2,
+.block-main-menu h2 {
+    display: none;
+}
+
+.block-user-menu ul.menu li,
+.block-main-menu ul.menu li {
+    margin: 0 -1px;
+    padding: 3px 8px;
+    display: inline;
+}
+
+.block-user-menu,
+.block-main-menu,
+.block-user-menu .block-inner,
+.block-main-menu .block-inner,
+.block-user-menu ul.menu,
+.block-main-menu ul.menu,
+.block-user-menu .content,
+.block-main-menu .content {
+    display: inline
+}
+
 /* for hover tabs */
 .region-menu li:hover {
     background-color: #f8f8f8;
