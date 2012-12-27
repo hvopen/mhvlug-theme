@@ -88,6 +88,11 @@ h2.site-name {
     color: #666;
 }
 
+.zone-menu .clearfix:after {
+    display: inline;
+    content: none;
+}
+
 .block-user-menu h2,
 .block-main-menu h2 {
     display: none;
