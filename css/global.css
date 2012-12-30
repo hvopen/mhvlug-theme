@@ -98,6 +98,10 @@ h2.site-name {
     display: none;
 }
 
+.block-main-menu ul.menu li ul.menu {
+    display: none;
+}
+
 .block-user-menu ul.menu li,
 .block-main-menu ul.menu li {
     margin: 0 -1px;
