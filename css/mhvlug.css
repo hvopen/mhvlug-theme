@@ -405,6 +405,17 @@ ul.primary a {
     background-color: white;
 }
 
+/* Content editor tabs */
+#section-content .tabs ul.secondary li:hover,
+#section-content .tabs ul.primary li:hover {
+    background-color: #F7E7DF;
+}
+
+#section-content .tabs ul.secondary li,
+#section-content .tabs ul.primary li {
+    font-size: 1.2em;
+}
+
 /*** BOX AROUND MEETING ***/
 .sidebar .block,
 #front-right .content .view-upcoming-events,
