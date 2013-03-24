@@ -34,7 +34,7 @@
 global $upcoming_date;
 $last_date = $upcoming_date;
 
-$node = node_load($fields[field_meeting_date_1]->raw);
+$node = node_load($fields['field_meeting_date_1']->raw);
 $upcoming_date = strtotime($node->field_meeting_date['und'][0]['value']);
 
 /** if ($upcoming_date == $last_date) {
