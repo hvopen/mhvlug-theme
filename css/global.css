@@ -195,11 +195,15 @@ h2.site-name {
     padding: 0 10px;
 }
 */
-
-.zone-content .views-field-field-photo img {
-    padding-bottom: 3px;
+.view-news img {
+   max-width: 98%;
+   height: auto;
+   margin: 2px;
+   border: solid 1px #666;
 }
-
+/* .zone-content .views-field-field-photo img { */
+/*     padding-bottom: 3px; */
+/* } */
 
 .view-news .views-row {
     padding-top: 0.5em;
