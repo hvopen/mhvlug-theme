@@ -200,6 +200,7 @@ h2.site-name {
    height: auto;
    margin: 2px;
    border: solid 1px #666;
+   border-radius: 0.5em;
 }
 /* .zone-content .views-field-field-photo img { */
 /*     padding-bottom: 3px; */
